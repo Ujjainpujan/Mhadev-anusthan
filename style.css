@@ -201,3 +201,36 @@ footer{
 footer{
     border-radius:15px;
 }
+.float-call{
+    position:fixed;
+    right:20px;
+    bottom:90px;
+    background:#ff6600;
+    color:#fff;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    z-index:9999;
+}
+
+.float-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:#fff;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    z-index:9999;
+}
