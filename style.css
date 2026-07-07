@@ -148,4 +148,56 @@ footer{
     display:block;
     margin:15px auto;
     border-radius:12px;
+}body{
+    background:#fffaf3;
+}
+
+#mahakal{
+    width:100%;
+    max-width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    margin:25px auto;
+    max-width:550px;
+    box-shadow:0 5px 18px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.btn-call{
+    background:#ff6b00;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+}
+
+.btn-call,
+.btn-whatsapp{
+    display:inline-block;
+    width:180px;
+    text-align:center;
+    margin:8px;
+}
+
+footer{
+    border-radius:15px;
 }
