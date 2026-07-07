@@ -141,3 +141,11 @@ footer{
     max-width:500px;
     box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
+.card img{
+    width:100%;
+    max-width:320px;
+    height:auto;
+    display:block;
+    margin:15px auto;
+    border-radius:12px;
+}
