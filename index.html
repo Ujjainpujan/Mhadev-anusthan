@@ -162,5 +162,21 @@ loading="lazy">
 <a href="tel:+918305776387" class="float-call">📞</a>
 
 <a href="https://wa.me/918305776387?text=नमस्ते%20पंडित%20जी,%20मुझे%20पूजा%20बुक%20करनी%20है।" class="float-whatsapp">💬</a>
+    <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.querySelector('input[name="name"]').value;
+    let phone = document.querySelector('input[name="phone"]').value;
+    let message = document.querySelector('textarea[name="message"]').value;
+
+    let text =
+`नाम: ${name}
+मोबाइल: ${phone}
+संदेश: ${message}`;
+
+    window.open("https://wa.me/918305776387?text=" + encodeURIComponent(text), "_blank");
+});
+    </script>
 </body>
 </html>
