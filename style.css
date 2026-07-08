@@ -384,3 +384,23 @@ font-size:30px;
     box-shadow:0 4px 10px rgba(0,0,0,.3);
     z-index:999;
 }
+.booking-box{
+    background:#fff8e1;
+    border:3px solid #ff9800;
+    border-radius:15px;
+    padding:15px;
+    margin:20px 0;
+    text-align:left;
+}
+
+.booking-box h2{
+    color:#d35400;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.booking-box p{
+    margin:8px 0;
+    font-weight:bold;
+    color:#222;
+}
