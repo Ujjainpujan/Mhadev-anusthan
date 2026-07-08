@@ -333,3 +333,17 @@ font-size:30px;
 }
 
 }
+.review-btn{
+    display:inline-block;
+    background:#fbbc04;
+    color:#000;
+    padding:12px 22px;
+    margin-top:15px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.review-btn:hover{
+    background:#e6ac00;
+}
