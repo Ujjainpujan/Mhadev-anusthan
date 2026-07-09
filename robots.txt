@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ujjainpujan.github.io/Mhadev-anusthan/sitemap.xml
