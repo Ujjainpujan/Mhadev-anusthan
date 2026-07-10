@@ -1,1 +1,672 @@
+/* ===========================
+   MAHADEV ANUSTHAN KENDRA
+   STYLE.CSS PART 1
+=========================== */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0b0b0b;
+color:#fff;
+overflow-x:hidden;
+line-height:1.6;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(12px);
+z-index:1000;
+border-bottom:1px solid rgba(255,179,0,.2);
+}
+
+.header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:80px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#ffb300;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+color:#fff;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffb300;
+}
+
+.call-btn{
+background:#ff9800;
+color:#fff;
+padding:12px 24px;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.call-btn:hover{
+transform:translateY(-3px);
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:url("mhakal.jpg") center center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+padding:20px;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:850px;
+}
+
+.hero-content h3{
+color:#ffb300;
+font-size:20px;
+margin-bottom:15px;
+}
+
+.hero-content h1{
+font-size:68px;
+margin-bottom:10px;
+}
+
+.hero-content h2{
+font-size:34px;
+color:#ffb300;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+.main-btn{
+display:inline-block;
+background:#ff9800;
+color:#fff;
+padding:16px 35px;
+border-radius:40px;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.main-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 30px rgba(255,152,0,.4);
+}
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about{
+padding:100px 0;
+background:#111;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-image img{
+width:100%;
+max-width:420px;
+margin:auto;
+border-radius:20px;
+border:4px solid #ffb300;
+box-shadow:0 0 30px rgba(255,179,0,.25);
+}
+
+.about-text h5{
+color:#ffb300;
+letter-spacing:3px;
+margin-bottom:10px;
+}
+
+.about-text h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.about-text p{
+font-size:18px;
+color:#ddd;
+margin-bottom:30px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.stat{
+background:#1b1b1b;
+padding:25px;
+border-radius:18px;
+text-align:center;
+border:1px solid rgba(255,179,0,.2);
+transition:.3s;
+}
+
+.stat:hover{
+transform:translateY(-8px);
+}
+
+.stat h3{
+color:#ffb300;
+font-size:30px;
+margin-bottom:10px;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+padding:100px 0;
+background:#0b0b0b;
+text-align:center;
+}
+
+.services h5{
+color:#ffb300;
+letter-spacing:3px;
+margin-bottom:10px;
+}
+
+.services h2{
+font-size:42px;
+margin-bottom:50px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+@media (max-width:768px){
+
+.service-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.service-card{
+padding:22px;
+border-radius:18px;
+}
+
+.service-card h3{
+font-size:34px;
+line-height:1.3;
+}
+
+.service-card p{
+font-size:21px;
+line-height:1.8;
+}
+
+}
+
+.service-card{
+background:#181818;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,179,0,.2);
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(255,179,0,.25);
+}
+
+.service-card h3{
+color:#ffb300;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.service-card p{
+color:#ddd;
+line-height:1.8;
+}
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+padding:100px 0;
+background:#111;
+text-align:center;
+}
+
+.gallery h5{
+color:#ffb300;
+letter-spacing:3px;
+margin-bottom:10px;
+}
+
+.gallery h2{
+font-size:42px;
+margin-bottom:50px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:20px;
+transition:.3s;
+border:3px solid rgba(255,179,0,.2);
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+box-shadow:0 15px 30px rgba(255,179,0,.3);
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+padding:100px 0;
+background:#0b0b0b;
+text-align:center;
+}
+
+.contact h5{
+color:#ffb300;
+letter-spacing:3px;
+margin-bottom:10px;
+}
+
+.contact h2{
+font-size:42px;
+margin-bottom:40px;
+}
+
+.contact-box{
+max-width:700px;
+margin:auto;
+background:#181818;
+padding:40px;
+border-radius:20px;
+border:1px solid rgba(255,179,0,.2);
+}
+
+.contact-box h3{
+color:#ffb300;
+margin-bottom:20px;
+}
+
+.contact-box p{
+margin:12px 0;
+color:#ddd;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:25px;
+}
+
+.whatsapp-btn{
+display:inline-block;
+background:#25D366;
+padding:16px 35px;
+border-radius:40px;
+color:#fff;
+font-weight:600;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#000;
+padding:30px 0;
+text-align:center;
+color:#aaa;
+border-top:1px solid rgba(255,179,0,.2);
+}
+
+/* Floating Buttons */
+
+.floating-call,
+.floating-whatsapp{
+position:fixed;
+right:20px;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+color:#fff;
+z-index:999;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.floating-call{
+bottom:95px;
+background:#ff9800;
+}
+
+.floating-whatsapp{
+bottom:20px;
+background:#25D366;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.services h2,
+.gallery h2,
+.contact h2{
+font-size:32px;
+}
+
+.call-btn{
+display:none;
+}
+
+}
+.service-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:20px;
+display:block;
+}
+.floating-call{
+    bottom:120px;
+    right:20px;
+}
+
+.floating-whatsapp{
+    bottom:30px;
+    right:20px;
+}
+
+.services,
+.gallery,
+.contact{
+    position:relative;
+    z-index:1;
+}
+.map-section{
+padding:80px 20px;
+background:#111;
+text-align:center;
+}
+
+.map-section h2{
+font-size:38px;
+margin-bottom:30px;
+color:#ffb300;
+}
+
+.map-section iframe{
+max-width:1200px;
+display:block;
+margin:auto;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.reviews{
+padding:80px 20px;
+background:#0d0d0d;
+text-align:center;
+}
+
+.reviews h2{
+font-size:45px;
+color:#ffb300;
+margin-bottom:10px;
+}
+
+.reviews h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.reviews p{
+color:#ddd;
+}
+
+.review-box{
+background:#1b1b1b;
+padding:25px;
+margin:25px auto;
+max-width:700px;
+border-radius:15px;
+border:1px solid rgba(255,179,0,.2);
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+.booking{
+padding:80px 20px;
+background:#111;
+text-align:center;
+}
+
+.booking h2{
+font-size:40px;
+color:#ffb300;
+margin-bottom:15px;
+}
+
+.booking p{
+margin-bottom:30px;
+color:#ddd;
+}
+
+.booking form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.booking input,
+.booking select,
+.booking textarea{
+padding:18px;
+border:none;
+border-radius:12px;
+font-size:17px;
+background:#1f1f1f;
+color:#fff;
+}
+
+.booking textarea{
+height:150px;
+resize:none;
+}
+
+.booking button{
+background:#ff9800;
+color:#fff;
+padding:18px;
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.booking button:hover{
+background:#e68900;
+}
+.bottom-bar{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+display:flex;
+z-index:9999;
+}
+
+.bottom-call,
+.bottom-whatsapp{
+flex:1;
+padding:18px;
+text-align:center;
+color:#fff;
+font-size:20px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.bottom-call{
+background:#ff9800;
+}
+
+.bottom-whatsapp{
+background:#25D366;
+}
+
+body{
+padding-bottom:70px;
+}
+
+@media(min-width:769px){
+.bottom-bar{
+display:none;
+}
+}
+.faq{
+padding:80px 20px;
+background:#111;
+}
+
+.faq h2{
+text-align:center;
+color:#ffb300;
+margin-bottom:40px;
+font-size:38px;
+}
+
+.faq-item{
+background:#1b1b1b;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+border-left:5px solid #ff9800;
+}
+
+.faq-item h3{
+margin-bottom:10px;
+color:#fff;
+}
+
+.faq-item p{
+color:#ddd;
+line-height:1.7;
+  }
