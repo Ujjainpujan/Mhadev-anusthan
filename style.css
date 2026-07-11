@@ -701,3 +701,40 @@ line-height:1.7;
     margin-top:0;
     line-height:1.7;
 }
+/* ===========================
+   GOOGLE REVIEWS
+=========================== */
+
+.reviews{
+    padding:100px 0;
+    background:#181818;
+    text-align:center;
+}
+
+.reviews h5{
+    color:#ffb300;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.reviews h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.review-card{
+    max-width:700px;
+    margin:20px auto;
+    background:#222;
+    padding:30px;
+    border-radius:20px;
+    border:2px solid rgba(255,179,0,.3);
+    color:#fff;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.review-card h4{
+    color:#ffb300;
+    margin-top:15px;
+}
