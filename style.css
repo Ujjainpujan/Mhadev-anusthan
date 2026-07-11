@@ -738,3 +738,48 @@ line-height:1.7;
     color:#ffb300;
     margin-top:15px;
 }
+/* WHY CHOOSE US */
+
+.why-us{
+    padding:80px 20px;
+    background:#111;
+}
+
+.why-us h2{
+    text-align:center;
+    color:#ff9800;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid rgba(255,152,0,.3);
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff9800;
+    box-shadow:0 10px 25px rgba(255,152,0,.25);
+}
+
+.why-card h3{
+    color:#ff9800;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.why-card p{
+    color:#ddd;
+    line-height:1.7;
+}
